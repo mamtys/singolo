@@ -3,10 +3,13 @@
   padding: 0;
 }
 
-.header {
+.body {
   width: 1020px;
-  height: 89px;
   margin: 0 auto;
+}
+
+.header {
+  height: 89px;
   box-sizing: border-box;
 
   background-color: #2d2f39;
@@ -64,8 +67,6 @@
   list-style: none;
 }
 
-
-
 .header-bottom-line {
   position: relative;
 
@@ -74,4 +75,67 @@
   width: 1020px;
 
   background-color: #323645;
+}
+
+/* slider */
+
+.slider {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 1020px;
+  height: 600px;
+  box-sizing: border-box;
+
+  padding: 30px;
+  background-color: #ef6c64;
+}
+
+.phone-horisontal,
+.phone-vertical {
+  position: relative;
+  background: url("./assets/img/base-phone.png");
+  width: 215px;
+  height: 458px;
+}
+
+.phone-horisontal {
+  margin-left: 150px;
+  margin-right: 150px;
+  transform: rotate(90deg);
+}
+
+.phone-screen-vertical {
+  position: absolute;
+  top: 63px;
+  left: 11px;
+  background: url("./assets/img/screen-vertical-phone.png");
+  width: 194px;
+  height: 339px;
+}
+
+.phone-screen-horisontal {
+  position: absolute;
+  top: 135px;
+  right: -63px;
+  background: url("./assets/img/screen-horizontal-phone.png");
+  transform: rotate(-90deg);
+  width: 339px;
+  height: 194px;
+}
+
+.arrow-left, 
+.arrow-right {
+  background: url("./assets/img/arrow-left.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 20px;
+  cursor: pointer;
+  width: 16px;
+  height: 27px;
+}
+
+.arrow-right {
+  transform: scale(-1, 1);
 }
