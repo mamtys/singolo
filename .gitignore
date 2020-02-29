@@ -1,4 +1,5 @@
 #config files
 cssconfig.json
+csscomb.json
 .htmlhintrc
 .*
