@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.page {
+  min-width: 360px;
+  max-width: 1024px;
+  margin: 0 auto;
+
+  font-family: "Lato";
+}
+
+.portfolio {
+  padding: 30px;
+
+  color: rgb(138, 142, 175);
+
+  background-color: rgb(50, 52, 66);
+}
+
+.portfolio-header {
+  margin-top: 20px;
+}
+
+.portfolio-title {
+  font-size: 20px;
+}
+
+.portfolio-subtitle {
+  padding-top: 15px;
+}
+
+.portfolio-tag-group {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+
+  list-style: none;
+}
+
+.portfolio-tag-item {
+  margin-top: 5px;
+  margin-right: 10px;
+  padding: 2px 5px;
+
+  border: 1px solid rgb(138, 142, 175);
+  border-radius: 4px;
+  cursor: pointer;
+  ;
+}
+
+.portfolio-tag-item:hover,
+.portfolio-tag-active {
+  color: white;
+
+  border: 1px solid white;
+}
+
+.portfolio-example-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 5px -15px;
+}
+
+
+.portfolio-example-container {
+  display: flex;
+  flex-grow: 10;
+  min-width: 200px;
+  max-width: 300px;
+  padding: 15px;
+}
+
+/*limit elements up to 12*/
+.portfolio-example-container:nth-of-type(n + 13) {
+  display: none;
+}
+
+.portfolio-example-item {
+  width: 100%;
+  padding-bottom: 100%;
+
+  background-color: lightgray;
+}
