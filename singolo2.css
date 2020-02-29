@@ -84,3 +84,75 @@
 
   background-color: lightgray;
 }
+
+.about {
+  padding: 30px;
+
+  color: rgb(28, 29, 68);
+
+  background: rgb(228, 228, 228);
+}
+
+.about-header {
+  margin: 20px 0;
+}
+
+.about-title {
+  font-size: 20px;
+  text-transform: capitalize;
+}
+
+.about-subtitle {
+  margin-top: 20px;
+}
+
+.about-photo-group {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 -10px;
+}
+
+.about-card-item {
+  flex-grow: 10;
+  box-sizing: border-box;
+  min-width: 200px;
+  max-width: 300px;
+  padding: 0 10px;
+}
+
+.fluid-picture {
+  width: 100%;
+  padding-bottom: 100%;
+}
+
+.about-photo {
+  background: lightgray;
+}
+
+.about-card-header {
+  margin: 20px 0;
+  overflow: hidden;
+}
+
+.about-card-title {
+  font-size: 20px;
+  white-space: nowrap;
+}
+
+.about-card-subtitle {
+  max-height: calc(1.5em*2);
+  margin-top: 10px;
+  overflow: hidden;
+
+  font-size: 20px;
+  line-height: 1.5em;
+}
+
+.icon-group {
+  display: flex;
+  height: 40px;
+  margin-top: 30px;
+
+  background-color: lightgray;
+}
+
