@@ -6,32 +6,32 @@
 .body {
   width: 1020px;
   margin: 0 auto;
+
   font-family: "Lato";
 }
 
 .header {
-  height: 89px;
   box-sizing: border-box;
+  height: 89px;
 
   background-color: #2d2f39;
 }
 
 .header-row {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   height: 100%;
   padding: 0 40px;
 }
 
 .text-logo {
-  font-size: 25px;
-  font-family: "Lato";
-  line-height: 6px;
   font-weight: 700;
-  text-transform: uppercase;
-
+  font-size: 25px;
+  line-height: 6px;
+  font-family: "Lato";
   color: rgb(255,255,255);
+  text-transform: uppercase;
 }
 
 .text-logo-red {
@@ -41,39 +41,41 @@
 .nav {
   position: relative;
   top: 5px;
+
   display: flex;
   justify-content: space-between;
-
   width: 370px;
+
   font-size: 12px;
   line-height: 3px;
   font-family: "Lato";
-  text-transform: uppercase;
-
   color: rgb(255,255,255);
+  text-transform: uppercase;
 }
 
 .nav-delimiter {
-  height: 3px;
   width: 3px;
-  border-radius: 100%;
+  height: 3px;
+
   background-color: #323645;
+  border-radius: 100%;
 }
 
 .nav-active {
   color: rgb(240,108,100);
 }
 
-.nav-item{
+.nav-item {
   position: relative;
+
   list-style: none;
 }
 
 .header-bottom-line {
   position: relative;
 
-  height: 6px;
   width: 1020px;
+  height: 6px;
 
   background-color: #323645;
 }
@@ -84,12 +86,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-
+  box-sizing: border-box;
   width: 1020px;
   height: 606px;
-  box-sizing: border-box;
+  padding: 0 25px;
 
-  padding: 0px 25px;
   background-color: #ef6c64;
 }
 
@@ -97,9 +98,10 @@
 .phone-vertical {
   position: relative;
   z-index: 1;
-  
+
   width: 215px;
   height: 458px;
+
   background: url("./assets/img/base-phone.png");
 }
 
@@ -109,34 +111,37 @@
 }
 
 .phone-vertical::before {
+  content: "";
   position: absolute;
-  transform: scaleX(15deg);
+  right: 0;
   bottom: 0;
-  right:0;
+
   display: block;
-  content: '';
   width: 240px;
   height: 481px;
+
   border-top-right-radius: 100px 50px;
-  border-bottom-left-radius: 50px 100px;
   border-bottom-right-radius: 27px;
+  border-bottom-left-radius: 50px 100px;
   box-shadow: #ce5d56 25px 25px;
+  transform: scaleX(15deg);
 }
 
 .phone-horisontal::before {
+  content: "";
   position: absolute;
-  transform: scaleX(15deg);
   top: 0;
-  right:0;
+  right: 0;
+
   display: block;
-  content: '';
   width: 240px;
   height: 481px;
-  border-top-right-radius: 27px;
-  border-top-left-radius: 50px 100px;
-  border-bottom-right-radius: 100px 50px;
 
+  border-top-left-radius: 50px 100px;
+  border-top-right-radius: 27px;
+  border-bottom-right-radius: 100px 50px;
   box-shadow: #ce5d56 25px -25px;
+  transform: scaleX(15deg);
 }
 
 
@@ -146,8 +151,9 @@
 }
 
 .phone-horisontal {
-  margin-left: 150px;
   margin-right: 150px;
+  margin-left: 150px;
+
   transform: rotate(90deg);
 }
 
@@ -155,30 +161,35 @@
   position: absolute;
   top: 63px;
   left: 11px;
-  background: url("./assets/img/screen-vertical-phone.png");
+
   width: 194px;
   height: 339px;
+
+  background: url("./assets/img/screen-vertical-phone.png");
 }
 
 .phone-screen-horisontal {
   position: absolute;
   top: 135px;
   right: -63px;
-  background: url("./assets/img/screen-horizontal-phone.png");
-  transform: rotate(-90deg);
+
   width: 339px;
   height: 194px;
+
+  background: url("./assets/img/screen-horizontal-phone.png");
+  transform: rotate(-90deg);
 }
 
-.arrow-left, 
+.arrow-left,
 .arrow-right {
+  width: 16px;
+  height: 27px;
+  padding: 20px;
+
   background: url("./assets/img/arrow-left.png");
   background-repeat: no-repeat;
   background-position: center;
-  padding: 20px;
   cursor: pointer;
-  width: 16px;
-  height: 27px;
 }
 
 .arrow-right {
@@ -188,50 +199,56 @@
 /*services*/
 .services {
   position: relative;
+
+  height: 495px;
+  margin-bottom: 30px;
   padding: 45px 35px;
-  height: 495px; 
-  background-color: #f1f1f1;
+
   font-size: 18px;
   color: rgb(118,126,158);
-  margin-bottom: 30px;
+
+  background-color: #f1f1f1;
 }
 
 .services-title {
-  font-size: 30px;
   margin: 18px 0;
-  color: rgb(102,109,137);
-  font-family: "Lato";
-  font-weight: 800;
-  text-align: left;
-  text-transform: capitalize;
   padding: 0 5px;
+
+  font-weight: 800;
+  font-size: 30px;
+  font-family: "Lato";
+  text-align: left;
+  color: rgb(102,109,137);
+  text-transform: capitalize;
 }
 
 .services-subtitle {
-  line-height: 28px;
   padding: 0 5px;
+
+  line-height: 28px;
 }
 
 .services-group {
-  margin-top: 8px;
   display: flex;
-  justify-content: space-evenly;
   flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 8px;
 }
 
 .services-item {
   display: flex;
-  justify-content: space-between;
   flex-grow: 10;
+  justify-content: space-between;
+  max-width: 314px;
   margin-top: 29px;
   padding-top: 4px;
   padding-right: 15px;
-  max-width: 314px;
 }
 
 .services-item-title {
-  font-size: 20px;
   padding-bottom: 4px;
+
+  font-size: 20px;
 }
 
 .services-item-info {
@@ -242,22 +259,25 @@
 
 .services-item-text {
   box-sizing: border-box;
+
   font-size: 12px;
   line-height: 6px;
 }
 
 .services-item-icon {
-  margin-top: 5px;
-  margin-left: 5px;
   width: 59px;
   height: 59px;
+  margin-top: 5px;
+  margin-left: 5px;
 }
 
 .bottom-line {
   position: absolute;
   bottom: 84px;
-  height: 6px;
+
   width: 100%;
+  height: 6px;
+
   background-color: rgb(255, 255, 255);
 }
 
