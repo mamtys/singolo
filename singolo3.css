@@ -12,7 +12,7 @@
 }
 
 .quote {
-  padding: 60px 40px;
+  padding: 60px 40px 0;
 
   background-color: #f06c64;
 }
@@ -42,6 +42,8 @@
   margin-bottom: 15px;
   padding-left: 15px;
 
+  color: #f0d8d9;
+
   background-color: #d6564f;
   border: none;
   border-radius: 5px;
@@ -65,11 +67,23 @@
   font-size: 12px;
   line-height: 38px;
   font-family: "Lato";
-  color: #f48c8f;
+  color: #f0d8d9;
 
   background-color: #d6564f;
   border: none;
   border-radius: 5px;
+
+  resize: none;
+}
+
+.quote-textarea::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 38px;
+  font-family: "Lato";
+  color: #f48c8f;
+
+  opacity: 1;
 }
 
 .flex-row {
@@ -79,10 +93,24 @@
 .quote-form {
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
   box-sizing: border-box;
   width: 619px;
   margin-top: 45px;
-  padding-bottom: 15px;
+  margin-bottom: 5px;
+}
+
+.quote-button {
+  margin: 15px 0;
+  width: min-content;
+  padding: 10px 20px;
+  font-weight: 700;
+  font-size: 15px;
+  color: #f0d8d9;
+  background-color: #d6564f;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .footer {

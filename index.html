@@ -251,10 +251,11 @@
         <div class="fluid-picture about-photo about-img2"></div>
         <div class="about-card-header">
           <h6 class="about-card-title">
-            Some Really Long Name Such Really Much Wow 
+            Some Really Long Name Such Really Much Wow
           </h6>
           <p class="about-card-subtitle">
-            texte te fse sef sef sefsefsefsefsf sefse sef sef sefsef sef sef ae aw adwa wd aw awd aw texte te fse sef sef sefsefsefsefsf sefse sef sef sefsef sef sef ae aw adwa wd aw awd aw more text more more more more
+            texte te fse sef sef sefsefsefsefsf sefse sef sef sefsef sef sef ae aw adwa wd aw awd aw texte te fse sef
+            sef sefsefsefsefsf sefse sef sef sefsef sef sef ae aw adwa wd aw awd aw more text more more more more
           </p>
           <div class="icon-group">
             <object class="icon-item" type="image/svg+xml" data="./assets/svg/facebook.svg">
@@ -305,25 +306,24 @@
   <!--singolo3-->
   <section class="quote">
     <header class="quote-header">
-      <h1 class="quote-title">Get A Quote</h1>
-      <p class="quote-subtitle">text text tezt text text text text text text text text tezt text text text text
-        text
+      <h1 class="quote-title">Get a Quote</h1>
+      <p class="quote-subtitle">text text tezt text text text text text text text text tezt text text text text text
         text text
-        text tezt text text text text text text text text tezt text text text text text text text text tezt text
-        text
+        text tezt text text text text text text text text tezt text text text text text text text text tezt text text
         text text text text </p>
     </header>
     <div class="flex-row">
       <form class="quote-form">
-        <input class="quote-input" type="text" placeholder="Name" required>
-        <input class="quote-input" type="text" placeholder="Email" required>
+        <input class="quote-input" type="text" placeholder="Name" required pattern="^\w+$">
+        <input class="quote-input" type="text" placeholder="Email" required pattern="^\w+@\w+\.\w+$">
         <input class="quote-input" type="text" placeholder="Subject">
-        <textarea class="quote-textarea">Describe your project in detail...</textarea>
+        <textarea class="quote-textarea" placeholder="Describe your project in detail..."></textarea>
+        <button class="quote-button">Submit</button>
       </form>
-      <ul class="contact">
+
+      <div class="contact">
         <h6 class="contact-title">Contact Information</h6>
-        <p class="contact-text">Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nib text text tezt
-          text text
+        <p class="contact-text">Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nib text text tezt text text
           text text text text text text tezt text text text text text text text
           text tezt text text text text text text text text tezt text text text text text text
         </p>
@@ -336,7 +336,7 @@
             <img class="contact-info-icon" src="assets/svg/phone.svg">
             03526 33186 35
           </a>
-          <a href="mail:" class="contact-info-item">
+          <a href="mailto:info@singolo.com" class="contact-info-item">
             <img class="contact-info-icon" src="assets/svg/mail.svg">
             info@singolo.com
           </a>
