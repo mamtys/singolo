@@ -5,7 +5,7 @@
 
 .page {
   min-width: 360px;
-  max-width: 1024px;
+  max-width: 1020px;
   margin: 0 auto;
 
   font-family: "Lato";
@@ -247,7 +247,6 @@
   justify-content: space-between;
   width: calc(32px*4 + 9px*3);
   height: 40px;
-  margin-top: 15px;
 }
 
 .icon-item {
@@ -256,13 +255,20 @@
   box-sizing: border-box;
   width: 33px;
   height: 33px;
-  margin-top: 7px;
   padding: 6px;
   overflow: hidden;
 
   border: 1px solid #666d89;
   border-radius: 16px;
   cursor: pointer;
+}
+
+.about-icon-group {
+  margin-top: 15px;
+}
+
+.about-icon-item {
+  margin-top: 7px;
 }
 
 .icon-item:hover {
