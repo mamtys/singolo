@@ -14,7 +14,7 @@
 .portfolio {
   position: relative;
 
-  padding: 42px;
+  padding: 40px;
 
   color: #767e9e;
 
@@ -70,14 +70,14 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 8px -10px 14px;
+  margin: 9px -10px 23px;
 }
 
 
 .portfolio-example-container {
   display: flex;
   flex-grow: 10;
-  min-width: 220px;
+  min-width: 200px;
   max-width: 300px;
   margin: 10px;
 }
@@ -144,7 +144,7 @@
 
 .portfolio-bottom-line {
   position: absolute;
-  top: 100%;
+  bottom: 0;
   left: 0;
 
   width: 100%;
@@ -152,10 +152,11 @@
 
   background-color: #323746;
 }
+
 .about {
   position: relative;
 
-  padding: 42px;
+  padding: 40px;
 
   color: #767e9e;
 
@@ -163,7 +164,7 @@
 }
 
 .about-header {
-  margin: 23px 0;
+  margin: 20px 0;
 }
 
 .about-title {
@@ -183,7 +184,7 @@
 .about-photo-group {
   display: flex;
   justify-content: space-between;
-  margin: 30px -10px 10px;
+  margin: 28px -10px 10px;
   overflow: hidden;
   overflow-x: visible;
 }
@@ -227,15 +228,17 @@
 }
 
 .about-card-title {
+  overflow-x: hidden;
+
   font-size: 18px;
   white-space: nowrap;
-  overflow-x: hidden;
   text-overflow: ellipsis;
 }
 
 .about-card-subtitle {
   max-height: calc(1.77em*2);
   margin-top: 10px;
+  margin-bottom: 15px;
   overflow: hidden;
 
   font-size: 12px;
@@ -246,7 +249,7 @@
   display: flex;
   justify-content: space-between;
   width: calc(32px*4 + 9px*3);
-  height: 40px;
+  min-height: 33px;
 }
 
 .icon-item {
@@ -286,5 +289,3 @@
 
   background-color: #ffffff;
 }
-
-

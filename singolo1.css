@@ -30,12 +30,12 @@
   font-size: 25px;
   line-height: 6px;
   font-family: "Lato";
-  color: rgb(255,255,255);
+  color: rgb(255, 255, 255);
   text-transform: uppercase;
 }
 
 .text-logo-red {
-  color: rgb(240,108,100);
+  color: rgb(240, 108, 100);
 }
 
 .nav {
@@ -49,7 +49,7 @@
   font-size: 12px;
   line-height: 3px;
   font-family: "Lato";
-  color: rgb(255,255,255);
+  color: rgb(255, 255, 255);
   text-transform: uppercase;
 }
 
@@ -62,18 +62,19 @@
 }
 
 .nav-active {
-  color: rgb(240,108,100);
+  color: rgb(240, 108, 100);
 }
 
 .nav-item {
   position: relative;
 
   list-style: none;
+
   cursor: pointer;
 }
 
 .nav-item:hover {
-  color: rgb(240,108,100);
+  color: rgb(240, 108, 100);
 }
 
 .header-bottom-line {
@@ -205,12 +206,10 @@
 .services {
   position: relative;
 
-  height: 495px;
-  margin-bottom: 30px;
-  padding: 45px 35px;
+  padding: 42px 35px;
 
   font-size: 18px;
-  color: rgb(118,126,158);
+  color: rgb(118, 126, 158);
 
   background-color: #f1f1f1;
 }
@@ -223,12 +222,12 @@
   font-size: 30px;
   font-family: "Lato";
   text-align: left;
-  color: rgb(102,109,137);
+  color: rgb(102, 109, 137);
   text-transform: capitalize;
 }
 
 .services-subtitle {
-  padding: 0 5px;
+  padding: 2px 5px;
 
   line-height: 28px;
 }
@@ -237,7 +236,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  margin-top: 8px;
+  margin: 8px -8px 29px 0;
 }
 
 .services-item {
@@ -246,14 +245,21 @@
   justify-content: space-between;
   max-width: 314px;
   margin-top: 29px;
+  margin-right: 15px;
   padding-top: 4px;
-  padding-right: 15px;
+}
+
+.services-item-icon {
+  width: 59px;
+  height: 59px;
+  margin: 5px 5px 0;
 }
 
 .services-item-title {
-  padding-bottom: 4px;
+  padding-bottom: 5px;
 
-  font-size: 20px;
+  font-size: 18px;
+  color: rgb(102, 109, 137);
 }
 
 .services-item-info {
@@ -269,16 +275,10 @@
   line-height: 6px;
 }
 
-.services-item-icon {
-  width: 59px;
-  height: 59px;
-  margin-top: 5px;
-  margin-left: 5px;
-}
-
 .bottom-line {
   position: absolute;
-  bottom: 84px;
+  bottom: 0;
+  left: 0;
 
   width: 100%;
   height: 6px;
@@ -309,4 +309,3 @@
 .icon-star {
   background: url("./assets/icons/star.png");
 }
-
