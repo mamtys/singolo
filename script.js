@@ -1,4 +1,72 @@
 (function () {
+    let headerNav = document.getElementById('header-nav');
+    let active = headerNav.getElementsByClassName('nav-active')[0];
+    headerNav.addEventListener('click', (event) => {
+        if (!event.target.matches('.nav-item')) {
+            return;
+        }
+
+        if (active) {
+            active.classList.remove('nav-active');
+        }
+
+        event.target.classList.add('nav-active');
+
+        active = event.target;
+    })
+})();
+
+(function () {
+    let portfolioTags = document.getElementById('portfolio-tag-group');
+    let active = portfolioTags.getElementsByClassName('portfolio-tag-active')[0];
+    let portfolioImages = document.getElementById('portfolio-example-group');
+
+    portfolioTags.addEventListener('click', (event) => {
+
+        if (!event.target.matches('.portfolio-tag-item')) {
+            return;
+        }
+
+        if (event.target.isEqualNode(active)) {
+            return;
+        }
+
+        if (active) {
+            active.classList.remove('portfolio-tag-active');
+        }
+
+        event.target.classList.add('portfolio-tag-active');
+
+        active = event.target;
+    })
+})();
+
+(function () {
+    let portfolioImages = document.getElementById('portfolio-example-group');
+    let active = null;
+    portfolioImages.addEventListener('click', () => {
+        if (!event.target.matches('.portfolio-example-item')) {
+            return;
+        }
+
+        if (event.target.isEqualNode(active)) {
+            active = null;
+            event.target.classList.remove('portfolio-example-active');
+            return;
+        }
+
+        if (active) {
+            active.classList.remove('portfolio-example-active');
+        }
+
+        event.target.classList.add('portfolio-example-active');
+
+        active = event.target;
+    })
+})();
+
+
+(function () {
     let quoteForm = document.getElementById('quote-form');
     quoteForm.addEventListener('submit', () => {
         event.preventDefault();

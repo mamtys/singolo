@@ -3,7 +3,14 @@
   padding: 0;
 }
 
+.reserve-header-height {
+  height: 89px;
+}
+
 .header {
+  position: fixed;
+  z-index: 100;
+
   box-sizing: border-box;
   height: 89px;
 
@@ -82,13 +89,30 @@
 /* slider */
 
 .slider {
+  position: relative;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
   width: 1020px;
   height: 606px;
-  padding: 0 21px 5px;
+  overflow: hidden;
+}
+
+.slider-item {
+  position: absolute;
+
+  min-width: 100%;
+  height: 100%;
+  min-height: 100%;
+}
+
+.phone-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 
   background-color: #ef6c64;
 }
@@ -181,20 +205,30 @@
 
 .arrow-left,
 .arrow-right {
+  position: absolute;
+  z-index: 10;
+
   width: 16px;
   height: 27px;
   padding: 20px;
 
   background: url("./assets/img/arrow-left.png");
-  filter: grayscale(25%);
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
+  filter: grayscale(25%);
+}
+
+.arrow-left {
+  left: 21px;
+
+  transform: scale(-1, 1);
 }
 
 .arrow-right {
-  transform: scale(-1, 1);
+  right: 21px;
 }
+
 
 /*services*/
 .services {
@@ -397,6 +431,10 @@
   background-color: #464b5e;
 }
 
+.portfolio-example-active {
+  box-shadow: 0 0 0 5px #f06c64;
+}
+
 .portfolio-img1 {
   background: url("./assets/img/portfolio-img1.jpeg");
 }
@@ -461,10 +499,11 @@
 
   padding: 40px;
 
+  text-align: justify;
   color: #767e9e;
 
   background: #f2f2f2;
-  text-align: justify
+  ;
 }
 
 .about-header {
@@ -494,6 +533,7 @@
 
 .about-card-item {
   flex-grow: 10;
+  flex-basis: 200px;
   min-width: 230px;
   max-width: 300px;
   margin-top: 14px;
@@ -604,10 +644,13 @@
 
 .quote {
   position: relative;
+
   padding: 58px 40px 0;
 
+  text-align: justify;
+
   background-color: #f06c64;
-  text-align: justify
+  ;
 }
 
 .quote-title {
@@ -735,11 +778,11 @@
 .contact-info-item {
   display: flex;
   align-items: center;
+  height: 22px;
 
   font-weight: 400;
   font-size: 12px;
-  height: 22px;
-  line-height:12px;
+  line-height: 12px;
   line-height: 22px;
   font-family: "Lato";
   color: #f0d8d9;
@@ -830,3 +873,4 @@
   font-size: 20px;
   color: #666d89;
 }
+
