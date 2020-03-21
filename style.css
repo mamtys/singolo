@@ -117,10 +117,8 @@
   background-color: #ef6c64;
 }
 
-.phone-horisontal,
-.phone-vertical {
+.phone {
   position: relative;
-  z-index: 1;
 
   width: 215px;
   height: 458px;
@@ -128,10 +126,6 @@
   background: url("./assets/img/base-phone.png");
 }
 
-.phone-vertical {
-  top: -13px;
-  left: -10px;
-}
 
 .phone-vertical::before {
   content: "";
@@ -147,7 +141,8 @@
   border-bottom-right-radius: 27px;
   border-bottom-left-radius: 50px 100px;
   box-shadow: #ce5d56 25px 25px;
-  transform: scaleX(15deg);
+
+  pointer-events: none;
 }
 
 .phone-horisontal::before {
@@ -164,20 +159,32 @@
   border-top-right-radius: 27px;
   border-bottom-right-radius: 100px 50px;
   box-shadow: #ce5d56 25px -25px;
-  transform: scaleX(15deg);
+
+  pointer-events: none;
 }
 
-
-.phone-horisontal {
-  top: -14px;
-  left: 14px;
+.phone-vertical {
+  top: -15px;
+  left: -108px;
 }
 
 .phone-horisontal {
-  margin-right: 150px;
+  top: -16px;
+  left: -39px;
+}
+
+.phone-horisontal {
   margin-left: 150px;
 
   transform: rotate(90deg);
+}
+
+.phone-screen {
+  visibility: hidden;
+}
+
+.phone-screen-active {
+  visibility: visible;
 }
 
 .phone-screen-vertical {
@@ -203,8 +210,7 @@
   transform: rotate(-90deg);
 }
 
-.arrow-left,
-.arrow-right {
+.slider-arrow {
   position: absolute;
   z-index: 10;
 
@@ -229,7 +235,6 @@
   right: 21px;
 }
 
-
 /*services*/
 .services {
   position: relative;
@@ -237,10 +242,11 @@
   padding: 42px 35px;
 
   font-size: 18px;
+  text-align: justify;
   color: rgb(118, 126, 158);
 
   background-color: #f1f1f1;
-  text-align: justify
+  ;
 }
 
 .services-title {
@@ -873,4 +879,3 @@
   font-size: 20px;
   color: #666d89;
 }
-
