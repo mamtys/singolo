@@ -12,7 +12,7 @@
   <header class="header">
     <div class="header-row">
       <h1 class="text-logo">Singolo<span class="text-logo-red">*</span></h1>
-      <nav class="nav">
+      <nav class="nav" id="header-nav">
         <div class="nav-item nav-active">
           Home
         </div>
@@ -36,17 +36,40 @@
     </div>
     <div class="header-bottom-line"></div>
   </header>
+  <div class="reserve-header-height"></div>
 
   <!-- slider -->
-  <section class="slider">
-    <div class="arrow-right"></div>
-    <div class="phone-vertical">
-      <div class="phone-screen-vertical"></div>
-    </div>
-    <div class="phone-horisontal">
-      <div class="phone-screen-horisontal"></div>
-    </div>
-    <div class="arrow-left"></div>
+  <section class="slider" id="slider">
+    <div class="slider-arrow arrow-left" data-direction="-1"></div>
+      <div class="slider-item">
+        <div class="phone-group">
+          <div class="phone phone-vertical">
+            <div class="phone-screen phone-screen-vertical phone-screen-active" id="phone-screen-vertical"></div>
+          </div>
+          <div class="phone phone-horisontal">
+            <div class="phone-screen phone-screen-horisontal phone-screen-active" id="phone-screen-horisontal"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="slider-item 1">
+        <div class="phone-group">
+          1
+        </div>
+      </div>
+
+      <div class="slider-item 2">
+        <div class="phone-group">
+          2
+        </div>
+      </div>
+
+      <div class="slider-item 3">
+        <div class="phone-group">
+          3
+        </div>
+      </div>
+    <div class="slider-arrow arrow-right" data-direction="1"></div>
   </section>
 
   <!-- services -->
@@ -156,7 +179,7 @@
         ex deus vult ace maria
       </p>
     </header>
-    <ul class="portfolio-tag-group">
+    <ul class="portfolio-tag-group" id="portfolio-tag-group">
       <li class="portfolio-tag-item portfolio-tag-active">
         All
       </li>
@@ -171,7 +194,7 @@
       </li>
     </ul>
 
-    <div class="portfolio-example-group">
+    <div class="portfolio-example-group" id="portfolio-example-group">
       <div class="portfolio-example-container">
         <div class="portfolio-example-item portfolio-img1"></div>
       </div>
@@ -313,11 +336,11 @@
         text text text text </p>
     </header>
     <div class="flex-row">
-      <form class="quote-form">
-        <input class="quote-input" type="text" placeholder="Name" required pattern="^\w+$">
-        <input class="quote-input" type="text" placeholder="Email" required pattern="^\w+@\w+\.\w+$">
-        <input class="quote-input" type="text" placeholder="Subject">
-        <textarea class="quote-textarea" placeholder="Describe your project in detail..."></textarea>
+      <form class="quote-form" id="quote-form">
+        <input class="quote-input" type="text" name="quote-name" placeholder="Name" required pattern="^\w+$">
+        <input class="quote-input" type="text" name="quote-email" placeholder="Email" required pattern="^\w+@\w+\.\w+$">
+        <input class="quote-input" type="text" name="quote-subject" placeholder="Subject">
+        <textarea class="quote-textarea" name="quote-description" placeholder="Describe your project in detail..."></textarea>
         <button class="quote-button">Submit</button>
       </form>
 
@@ -346,6 +369,7 @@
     <div class="bottom-line quote-bottom-line"></div>
   </section>
 
+
   <footer class="footer">
     <p class="footer-copyright">
       © Copyright 2013
@@ -365,6 +389,8 @@
       </object>
     </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
