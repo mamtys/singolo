@@ -13,6 +13,7 @@
 
   box-sizing: border-box;
   height: 89px;
+  width: 100%;
 
   background-color: #2d2f39;
 }
@@ -80,7 +81,6 @@
 .header-bottom-line {
   position: relative;
 
-  width: 1020px;
   height: 6px;
 
   background-color: #323645;
@@ -95,7 +95,6 @@
   justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
-  width: 1020px;
   height: 606px;
   overflow: hidden;
 }
@@ -347,6 +346,7 @@
 
 /*singolo 2*/
 .page {
+  position: relative;
   min-width: 360px;
   max-width: 1020px;
   margin: 0 auto;
@@ -540,10 +540,9 @@
 .about-card-item {
   flex-grow: 10;
   flex-basis: 200px;
-  min-width: 230px;
+  min-width: 219px;
   max-width: 300px;
-  margin-top: 14px;
-  padding: 0 10px;
+  margin: 14px 10px;
 }
 
 .fluid-picture {
@@ -561,14 +560,17 @@
 
 .about-img1 {
   background: url("./assets/img/About-img1.jpeg");
+  background-size: cover;
 }
 
 .about-img2 {
   background: url("./assets/img/About-img2.jpeg");
+  background-size: cover;
 }
 
 .about-img3 {
   background: url("./assets/img/About-img3.jpeg");
+  background-size: cover;
 }
 
 .about-card-header {
@@ -640,14 +642,6 @@
 }
 
 /*singolo3*/
-.page {
-  min-width: 360px;
-  max-width: 1020px;
-  margin: 0 auto;
-
-  font-family: "Lato";
-}
-
 .quote {
   position: relative;
 
