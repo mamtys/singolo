@@ -2,7 +2,7 @@
     let headerNav = document.getElementById('header-nav');
     let active = headerNav.getElementsByClassName('nav-active')[0];
     headerNav.addEventListener('click', (event) => {
-        if (!event.target.matches('.nav-item')) {
+        if (!event.target.matches('.nav-link')) {
             return;
         }
 
@@ -13,14 +13,6 @@
         event.target.classList.add('nav-active');
 
         active = event.target;
-        
-
-        classes = shuffle(PORTFOLIO_IMG_ClASSES);
-        [...portfolioImages.children].forEach((element, ind) => {
-            element
-                .querySelector('.portfolio-example-item')
-                .className = `portfolio-example-item ${classes[ind]}`;
-        });
     })
 })();
 
@@ -46,6 +38,13 @@
         event.target.classList.add('portfolio-tag-active');
 
         active = event.target;
+
+        classes = shuffle(PORTFOLIO_IMG_ClASSES);
+        [...portfolioImages.children].forEach((element, ind) => {
+            element
+                .querySelector('.portfolio-example-item')
+                .className = `portfolio-example-item ${classes[ind]}`;
+        });
     })
 })();
 
