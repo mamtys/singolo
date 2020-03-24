@@ -6,51 +6,76 @@
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
   <meta charset="utf-8">
   <title>Singolo</title>
+  <script defer src="script.js" type='module'></script>
 </head>
 
 <body class="page">
   <header class="header">
     <div class="header-row">
       <h1 class="text-logo">Singolo<span class="text-logo-red">*</span></h1>
-      <nav class="nav">
-        <div class="nav-item nav-active">
+      <nav class="nav" id="header-nav">
+        <a class="nav-link nav-active" href="#">
           Home
-        </div>
+        </a>
         <span class="nav-delimiter"></span>
-        <div class="nav-item">
+        <a class="nav-link" href="#services">
           Services
-        </div>
+        </a>
         <span class="nav-delimiter"></span>
-        <div class="nav-item">
+        <a class="nav-link" href="#portfolio">
           Portfolio
-        </div>
+        </a>
         <span class="nav-delimiter"></span>
-        <div class="nav-item">
+        <a class="nav-link"  href="#about">
           About
-        </div>
+        </a>
         <span class="nav-delimiter"></span>
-        <div class="nav-item">
+        <a class="nav-link"  href="#quote">
           Contact
-        </div>
+        </a>
       </nav>
     </div>
     <div class="header-bottom-line"></div>
   </header>
+  <div class="reserve-header-height"></div>
 
   <!-- slider -->
-  <section class="slider">
-    <div class="arrow-right"></div>
-    <div class="phone-vertical">
-      <div class="phone-screen-vertical"></div>
+  <section class="slider" id="slider">
+    <div class="slider-arrow arrow-left" data-direction="-1"></div>
+
+    <div class="slider-item 1">
+      <div class="phone-group">
+        1
+      </div>
     </div>
-    <div class="phone-horisontal">
-      <div class="phone-screen-horisontal"></div>
+
+    <div class="slider-item 2">
+      <div class="phone-group">
+        2
+      </div>
     </div>
-    <div class="arrow-left"></div>
+
+    <div class="slider-item 3">
+      <div class="phone-group">
+        3
+      </div>
+    </div>
+
+    <div class="slider-item">
+      <div class="phone-group">
+        <div class="phone phone-vertical">
+          <div class="phone-screen phone-screen-vertical phone-screen-active"></div>
+        </div>
+        <div class="phone phone-horisontal">
+          <div class="phone-screen phone-screen-horisontal phone-screen-active"></div>
+        </div>
+      </div>
+    </div>
+    <div class="slider-arrow arrow-right" data-direction="1"></div>
   </section>
 
   <!-- services -->
-  <section class="services">
+  <section class="services" id="services">
     <header class="services-header">
       <h6 class="services-title">Our Services</h6>
       <p class="services-subtitle">
@@ -149,14 +174,14 @@
   </section>
 
   <!-- singolo2 -->
-  <section class="portfolio">
+  <section class="portfolio" id="portfolio">
     <header class="portfolio-header">
       <h1 class="portfolio-title">Portfolio</h1>
       <p class="portfolio-subtitle">
         ex deus vult ace maria
       </p>
     </header>
-    <ul class="portfolio-tag-group">
+    <ul class="portfolio-tag-group" id="portfolio-tag-group">
       <li class="portfolio-tag-item portfolio-tag-active">
         All
       </li>
@@ -171,7 +196,7 @@
       </li>
     </ul>
 
-    <div class="portfolio-example-group">
+    <div class="portfolio-example-group" id="portfolio-example-group">
       <div class="portfolio-example-container">
         <div class="portfolio-example-item portfolio-img1"></div>
       </div>
@@ -212,7 +237,7 @@
     <div class="portfolio-bottom-line"></div>
   </section>
 
-  <section class="about">
+  <section class="about" id="about">
     <header class="about-header">
       <h6 class="about-title">about us</h6>
       <p class="about-subtitle">
@@ -304,7 +329,7 @@
   </section>
 
   <!--singolo3-->
-  <section class="quote">
+  <section class="quote" id="quote">
     <header class="quote-header">
       <h1 class="quote-title">Get a Quote</h1>
       <p class="quote-subtitle">text text tezt text text text text text text text text tezt text text text text text
@@ -313,15 +338,16 @@
         text text text text </p>
     </header>
     <div class="flex-row">
-      <form class="quote-form">
-        <input class="quote-input" type="text" placeholder="Name" required pattern="^\w+$">
-        <input class="quote-input" type="text" placeholder="Email" required pattern="^\w+@\w+\.\w+$">
-        <input class="quote-input" type="text" placeholder="Subject">
-        <textarea class="quote-textarea" placeholder="Describe your project in detail..."></textarea>
+      <form class="quote-form" id="quote-form">
+        <input class="quote-input" type="text" name="quote-name" placeholder="Name" required pattern="^\w+$">
+        <input class="quote-input" type="text" name="quote-email" placeholder="Email" required pattern="^\w+@\w+\.\w+$">
+        <input class="quote-input" type="text" name="quote-subject" placeholder="Subject">
+        <textarea class="quote-textarea" name="quote-description"
+          placeholder="Describe your project in detail..."></textarea>
         <button class="quote-button">Submit</button>
       </form>
 
-      <div class="contact">
+      <div class="contact" id="portfolio">
         <h6 class="contact-title">Contact Information</h6>
         <p class="contact-text">Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nib text text tezt text text
           text text text text text text tezt text text text text text text text
@@ -346,6 +372,7 @@
     <div class="bottom-line quote-bottom-line"></div>
   </section>
 
+
   <footer class="footer">
     <p class="footer-copyright">
       © Copyright 2013
@@ -366,7 +393,6 @@
     </div>
   </footer>
 
-  <script src="script.js"></script>
 </body>
 
 </html>
