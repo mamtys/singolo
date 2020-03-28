@@ -9,7 +9,7 @@ function createSwither(targetClass, activeClass, toggleSelf = false) {
         if (toggleSelf && event.target.classList.contains(activeClass)) {
             active = null;
             event.target.classList.remove(activeClass);
-            return false
+            return true;
         } 
 
         if (!toggleSelf && event.target.classList.contains(activeClass)) {

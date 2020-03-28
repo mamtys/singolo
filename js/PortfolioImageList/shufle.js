@@ -5,8 +5,7 @@ function shufle() {
 
     [...this.target.children].forEach((element, ind) => {
         element
-            .querySelector('.portfolio-example-item')
-            .className = `portfolio-example-item ${classes[ind]}`;
+            .className = `portfolio-example-item responsive-box ${classes[ind]}`;
     });
 }
 
